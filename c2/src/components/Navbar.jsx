@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './navbar.css'
-import { saveData } from '../action/local/localStorage'
+import { Data } from '../action/local/localStorage'
 
 export const Navbar = () => {
     const navigate = useNavigate()
     const handleLogout = () => {
-        saveData("Juser", [])
+        Data("Juser", [])
         navigate("/login")
     }
     return (

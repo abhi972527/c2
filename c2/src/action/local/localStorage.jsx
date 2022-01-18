@@ -3,6 +3,6 @@ export const  getLocal = (key) => {
     return local;
 }
 
-export const saveData = (key, data) => {
+export const Data = (key, data) => {
     localStorage.setItem(key, JSON.stringify(data))
 }
