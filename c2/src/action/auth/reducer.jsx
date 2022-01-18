@@ -1,16 +1,16 @@
-import { getLocal, saveData } from "../local/localStorage";
+import { Local, Data } from "../local/localStorage";
 import { GET_USER } from "./actionTypes";
 
 
 const init = {
-    user: getLocal("Juser") || []
+    user: Local("user") || []
 }
 
 export const authReducer = (state = init, { type, payload }) => {
     switch (type) {
 
         case GET_USER:
-            saveData("Juser", [payload])
+            Data("user", [payload])
             return {
                 user: [payload]
             }

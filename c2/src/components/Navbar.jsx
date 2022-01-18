@@ -6,7 +6,7 @@ import { Data } from '../action/local/localStorage'
 export const Navbar = () => {
     const navigate = useNavigate()
     const handleLogout = () => {
-        Data("Juser", [])
+        Data("user", [])
         navigate("/login")
     }
     return (
