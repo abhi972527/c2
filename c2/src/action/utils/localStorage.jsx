@@ -1,6 +1,6 @@
 export const  getLocal = (key) => {
-    let loal = JSON.parse(localStorage.getItem(key))
-    return loal
+    let local = JSON.parse(localStorage.getItem(key))
+    return local;
 }
 
 export const saveData = (key, data) => {

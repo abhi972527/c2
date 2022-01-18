@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { nanoid } from 'nanoid'
-import { getUser } from '../redux/auth/action'
+import { getUser } from '../action/auth/action'
 import { useNavigate } from 'react-router-dom'
 
 export const Login = () => {
