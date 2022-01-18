@@ -1,4 +1,4 @@
-import { getLocal, saveData } from "../utils/localStorage";
+import { getLocal, saveData } from "../local/localStorage";
 import { GET_USER } from "./actionTypes";
 
 
